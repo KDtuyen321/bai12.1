@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+//        Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không và hiển thị ra thông báo bằng console hoặc alert
+// Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10 và hiển thị ra thông báo bằng console hoặc alert.
+// Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
+// Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+// Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, 
+điểm thi giữa kỳ, điểm thi cuối kỳ (Xuất Sắc, Giỏi, Khá, Trung Bình, Yếu)
+ <script>
+    // bai5
+    let a=parseFloat(prompt("nhap diem thi giua ki "));
+    let b=parseFloat(prompt("nhap diem thi cuoi ki "));
+    let c=parseFloat(prompt("nhap diem bai kiem tra"));
+    let d=(a+b+c)/3;
+    while(d<=10){
+        if(d===10){
+        alert("xuat xac");
+    }
+else if( d<10 && d>=8){
+    alert("gioi");
+}
+   else if(d<8&&d>=7){
+    alert("kha");
+} 
+else if(d>=5&&d<6){
+    alert("trung binh")
+}
+else{
+    alert("yeu")
+}
+    }
+    alert("nhap sai ")
+// bai2
+//     if(tuoi<15){
+//         alert("ban du tuoi roi")
+//         alert();
+//         }
+// else{
+// alert("ban qua tuoi roi")
+// };
+// bai 1
+// let a=Number(prompt("hay nhap so a:"));
+// let b=Number(prompt("hay nhap s0 b"));
+// if(a%b===0){
+//     alert("so a chia het cho so b");
+//     }
+//     else{
+//         alert("so a khong chia het so b")
+//     }
+// bai3
+// let a=parseInt(prompt("hay nhap vao so nguyen a:"));
+// if(a>0){
+//     alert("so ban nhap lon hon 0");}
+//     else if(a<0){
+//         alert("so ban nhap nho hon 0");
+//     }
+//     else{
+//         alert("ban nhap sai gia tri !");
+//     };
+// bai4
+// let a=parseInt(prompt("nhap so nguyen a"));
+// let b=parseInt(prompt("nhap so nguyen b"));
+// let c=parseInt(prompt("nhap so nguyen c"));
+
+// if(a>=b && a>=c){
+//     alert(` gia tri lon nhat la ${a} `);
+// }
+// else if(b>=a&&b>=c){
+//     alert(`gia tri lon nhat la ${b}`);}
+    
+    
+//     else{
+//         alert(`gia tri lon nhat la ${c}`)
+//     }
+
+
+
+
+
+ </script>   
+    
+        
+
+
+
+
+
+    
+</body>
+</html>
