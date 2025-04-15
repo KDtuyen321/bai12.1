@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let canNang =Number (prompt("nhap can nang cua ban vao day:"));
+        let chieuCao = Number(prompt("nhap chieu cao cua ban vao day:"));
+        let BMI = canNang / (chieuCao ** chieuCao);
+        
+        
+        if (BMI < 18.5) {
+            alert("CAN NANG THAP")
+        }
+        else if (18.5 < BMI && BMI < 24.9) {
+            alert("binh thuong")
+
+        }
+        // else if (BMI >= 25) {
+        //     alert("thua can")
+        // }
+        else if (25<BMI && BMI<=29.9) {
+            alert("tien beo phi")
+        }
+        else if (30 < BMI && BMI < 34.9) {
+            alert("beo phi do 1")
+
+        }
+        else if (35 < BMI && BMI < 39.9) {
+            alert("beo phi do 2")
+        }
+
+        else if (BMI >= 40) {
+            alert("beo phi do 3")
+        }
+        else {
+            alert("ket thuc")
+        }
+        console.log(`${BMI}`)
+    </script>
+</body>
+
+</html>
